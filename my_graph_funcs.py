@@ -298,7 +298,7 @@ def engine_barplot(df, df_exp, df_count):
 
     fig.add_layout_image(
         dict(
-            source="https://github.com/BiancaMT25/f1-app/blob/master/logos/ferrari.png",
+            source="https://raw.githubusercontent.com/BiancaMT25/f1-app/master/logos/ferrari.png",
             xref="paper", yref="paper",
             x=0.15, y=0.84,
             sizex=0.15, sizey=0.15,
@@ -308,7 +308,7 @@ def engine_barplot(df, df_exp, df_count):
 
     fig.add_layout_image(
         dict(
-            source="https://github.com/BiancaMT25/f1-app/blob/master/logos/mercedes.png",
+            source="https://raw.githubusercontent.com/BiancaMT25/f1-app/master/logos/mercedes.png",
             xref="paper", yref="paper",
             x=0.22, y=0.57,
             sizex=0.2, sizey=0.2,
@@ -318,7 +318,7 @@ def engine_barplot(df, df_exp, df_count):
 
     fig.add_layout_image(
         dict(
-            source="https://github.com/BiancaMT25/f1-app/blob/master/logos/renault.png",
+            source="https://raw.githubusercontent.com/BiancaMT25/f1-app/master/logos/renault.png",
             xref="paper", yref="paper",
             x=0.17, y=0.23,
             sizex=0.15, sizey=0.15,
