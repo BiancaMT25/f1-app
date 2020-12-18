@@ -150,19 +150,19 @@ def avg_lap_speed_ts(df, max_speeds, min_speeds):
 
 def engine_barplot(df, df_exp, df_count):
 
-    with open("logos/ferrari.png", "rb") as image_file_ferrari:
-        encoded_string = base64.b64encode(image_file_ferrari.read()).decode()
-    # Add the prefix that plotly will want when using the string as source
-    encoded_image_ferrari = "data:image/png;base64," + encoded_string
-
-    with open("logos/mercedes.png", "rb") as image_file_mercedes:
-        encoded_string = base64.b64encode(image_file_mercedes.read()).decode()
-    # Add the prefix that plotly will want when using the string as source
-    encoded_image_mercedes = "data:image/png;base64," + encoded_string
-
-    with open("logos/renault.png", "rb") as image_file_renault:
-        encoded_string = base64.b64encode(image_file_renault.read()).decode()
-    encoded_image_renault = "data:image/png;base64," + encoded_string
+    #with open("logos/ferrari.png", "rb") as image_file_ferrari:
+    #    encoded_string = base64.b64encode(image_file_ferrari.read()).decode()
+    ## Add the prefix that plotly will want when using the string as source
+    #encoded_image_ferrari = "data:image/png;base64," + encoded_string
+#
+    #with open("logos/mercedes.png", "rb") as image_file_mercedes:
+    #    encoded_string = base64.b64encode(image_file_mercedes.read()).decode()
+    ## Add the prefix that plotly will want when using the string as source
+    #encoded_image_mercedes = "data:image/png;base64," + encoded_string
+#
+    #with open("logos/renault.png", "rb") as image_file_renault:
+    #    encoded_string = base64.b64encode(image_file_renault.read()).decode()
+    #encoded_image_renault = "data:image/png;base64," + encoded_string
 
     col_map = {'mercedes': 'royalBlue',
                'renault': 'goldenrod',
@@ -298,7 +298,7 @@ def engine_barplot(df, df_exp, df_count):
 
     fig.add_layout_image(
         dict(
-            source=encoded_image_ferrari,
+            source="https://github.com/BiancaMT25/f1-app/blob/master/logos/ferrari.png",
             xref="paper", yref="paper",
             x=0.15, y=0.84,
             sizex=0.15, sizey=0.15,
@@ -308,7 +308,7 @@ def engine_barplot(df, df_exp, df_count):
 
     fig.add_layout_image(
         dict(
-            source=encoded_image_mercedes,
+            source="https://github.com/BiancaMT25/f1-app/blob/master/logos/mercedes.png",
             xref="paper", yref="paper",
             x=0.22, y=0.57,
             sizex=0.2, sizey=0.2,
@@ -318,7 +318,7 @@ def engine_barplot(df, df_exp, df_count):
 
     fig.add_layout_image(
         dict(
-            source=encoded_image_renault,
+            source="https://github.com/BiancaMT25/f1-app/blob/master/logos/renault.png",
             xref="paper", yref="paper",
             x=0.17, y=0.23,
             sizex=0.15, sizey=0.15,
