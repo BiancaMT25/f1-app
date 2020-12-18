@@ -12,6 +12,7 @@ from my_graph_funcs import avg_lap_speed_ts, engine_barplot
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 df_ts = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/avg_lap_speed.csv", sep=',')
 min_speeds = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/min_speeds.csv", sep=',')
