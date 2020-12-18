@@ -13,13 +13,13 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-df_ts = pd.read_csv("https://github.com/BiancaMT25/f1-app/blob/master/graph_data/avg_lap_speed.csv")
-min_speeds = pd.read_csv("https://github.com/BiancaMT25/f1-app/blob/master/graph_data/min_speeds.csv")
-max_speeds = pd.read_csv("https://github.com/BiancaMT25/f1-app/blob/master/graph_data/max_speeds.csv")
+df_ts = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/avg_lap_speed.csv", sep=',')
+min_speeds = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/min_speeds.csv", sep=',')
+max_speeds = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/max_speeds.csv", sep=',')
 
-df_engine = pd.read_csv("https://github.com/BiancaMT25/f1-app/blob/master/graph_data/top3.csv")
-df_engine_exp = pd.read_csv("https://github.com/BiancaMT25/f1-app/blob/master/graph_data/top3_exp.csv")
-df_engine_count = pd.read_csv("https://github.com/BiancaMT25/f1-app/blob/master/graph_data/engine_count_top3.csv")
+df_engine = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/top3.csv", sep=',')
+df_engine_exp = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/top3_exp.csv", sep=',')
+df_engine_count = pd.read_csv("https://raw.githubusercontent.com/BiancaMT25/f1-app/master/graph_data/engine_count_top3.csv", sep=',')
 
 unique_constructors = df_ts['constructorRef_mapped'].unique()
 champions2020 = ['mercedes', 'red_bull', 'racing_point']
